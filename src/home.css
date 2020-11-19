@@ -20,7 +20,7 @@ font-family: 'Rubik', sans-serif;
     margin: 0 auto;
 }
 #content #intro h1 {
-    animation: typing 1.5s steps(27, end), blink-caret 0.5s step-end infinite;
+    animation: typing 1.5s steps(27), blink-caret 0.5s step-end infinite;
     overflow: hidden;
     border-right: 3px solid #727080;
     white-space: nowrap;
