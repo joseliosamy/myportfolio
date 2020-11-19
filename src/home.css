@@ -1,0 +1,172 @@
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2,h3{
+    font-size: max(10px, 1.4vw);
+}
+h4{
+    font-size: max(10px, 1vw);
+}
+#body{
+    background-color: #fbfbfb;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#page-home{
+    width: 80%;
+    font-weight: 600;
+    color: #727080;
+}
+#body header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#body header img{
+    width: max(40px, 3vw);
+    height: max(40px, 3vw);
+    cursor: pointer;
+}
+#page-home #content .background-my-name{
+    width: 100%;
+    height: 98vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url(./assets/background-svg.svg);
+}
+#page-home #content .my-name{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page-home #content .my-name h1{
+    font-size: max(35px, 2.5vw);
+    text-align: center;
+}
+#page-home #content .apresentation{
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-home #content .consideration{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page-home #content .consideration a{
+    text-decoration: none;
+    color: #34333a;
+}
+#page-home .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#page-home .projects .grid-item{
+    max-height: 650px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "texto image"
+    "texto2 image"
+    "texto2 image";
+    gap: 10px;
+}
+#page-home .projects .grid-item2{
+    max-height: 650px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image texto"
+    "image texto2"
+    "image texto2";
+    gap: 10px;
+}
+#page-home .projects h2{
+    margin: auto 0;
+    text-align: center;
+    grid-area: texto;
+    font-family: 'Rubik', sans-serif;
+    color: #34333a;
+}
+#page-home .projects h3{
+    grid-area: texto2;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+}
+#page-home .projects h3 strong{
+    color: #a5a5a5;
+}
+#page-home .projects .grid-img{
+    display: flex;
+    align-items: center;
+    grid-area: image;
+}
+#page-home .projects img{
+    width: 100%;
+    text-align: center;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #bebebe;
+}
+footer .cop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./assets/background-svg.svg);
+    color: #34333a;
+    font-size: .7rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+footer .cop a {
+    color: #34333a;
+    text-decoration: none;
+    outline: none;
+}
+
+
+@media(max-width: 1100px){
+    #page-home .projects .grid-item,
+    #page-home .projects .grid-item2{
+        height: 400px;
+    }
+}
+@media(max-width: 850px){
+    #page-home .projects .grid-item,
+    #page-home .projects .grid-item2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
