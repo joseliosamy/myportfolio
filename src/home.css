@@ -26,7 +26,7 @@ font-family: 'Rubik', sans-serif;
     white-space: nowrap;
     margin: auto;
     font-size: 2.2em;
-    max-width: min(100%, 395px);
+    max-width: 11.2em;
 }
 @keyframes typing {
     from {
