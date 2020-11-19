@@ -3,121 +3,101 @@ font-family: 'Dosis', sans-serif;
 font-family: 'Questrial', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-h2,h3{
-    font-size: max(18px, 1.4vw);
-}
-h4{
-    font-size: max(10px, 1vw);
-}
-#body{
-    background-color: #fbfbfb;
-    font-family: 'Dosis', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation-name: background;
-    animation-duration: 400ms;  
-    animation-timing-function: ease;
-}
-#page-home{
-    width: 80%;
+
+#content {
     font-weight: 600;
     color: #727080;
 }
-#body header{
-    width: 100%;
-    height: 10vh;
+#content #intro {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+    flex-direction: column;
+    height: 100vh;
+    background: url(./assets/background-svg.svg);
 }
-#body header img{
-    width: max(40px, 3vw);
-    height: max(40px, 3vw);
-    cursor: pointer;
-    animation-name: headerImage;
-    animation-duration: 400ms;
+#content #intro img {
+    height: 8vh;
+    /* width: 4vw; */
+    margin: 0 auto;
 }
-.background-my-name{
-    width: 100%;
-    height: 98vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-image: url(./assets/background-svg.svg);
-}
-#page-home #content .my-name{
-    height: 88vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-#page-home #content .my-name h1{
-    font-size: max(35px, 2.5vw);
-    text-align: center;
-    animation: type 2s steps(27);
+#content #intro h1 {
+    animation: typing 3s steps(50, end), blink-caret 0.5s step-end infinite;
     overflow: hidden;
-    white-space: nowrap;
     border-right: 3px solid #727080;
-    display: inline;
-    width: 20.5ch;
+    white-space: nowrap;
+    margin: auto;
+    font-size: 2.2em;
+    max-width: min(100%, 395px);
 }
-#page-home #content .apresentation{
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #727080;
+    }
+}
+
+#content #content-text {
+    margin: 0 10%;
+}
+#content .apresentation {
     height: auto;
     font-family: 'Rubik', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#page-home #content .consideration{
+#content .consideration {
     height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#page-home #content .consideration a{
+#content .consideration a {
     text-decoration: none;
     color: #34333a;
 }
-#page-home .projects{
+
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#page-home .projects .grid-item{
+.projects .grid-item {
     max-height: 650px;
     margin-top: 12vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "texto image"
-    "texto2 image"
-    "texto2 image";
+    grid-template-areas:
+        'texto image'
+        'texto2 image'
+        'texto2 image';
     gap: 10px;
 }
-#page-home .projects .grid-item2{
+.projects .grid-item2 {
     max-height: 650px;
     margin-top: 12vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "image texto"
-    "image texto2"
-    "image texto2";
+    grid-template-areas:
+        'image texto'
+        'image texto2'
+        'image texto2';
     gap: 10px;
 }
-#page-home .projects h2{
+.projects h2 {
     margin: auto 0;
     text-align: center;
     grid-area: texto;
@@ -125,20 +105,20 @@ h4{
     color: #34333a;
     font-size: max(19px, 2vw);
 }
-#page-home .projects h3{
+.projects h3 {
     grid-area: texto2;
     font-family: 'Rubik', sans-serif;
     text-align: justify;
 }
-#page-home .projects h3 strong{
+.projects h3 strong {
     color: #a5a5a5;
 }
-#page-home .projects .grid-img{
+.projects .grid-img {
     display: flex;
     align-items: center;
     grid-area: image;
 }
-#page-home .projects img{
+.projects img {
     width: 100%;
     text-align: center;
 }
@@ -159,7 +139,7 @@ footer .cop {
     align-items: center;
     background-image: url(./assets/background-svg.svg);
     color: #34333a;
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-family: 'Titillium Web', sans-serif;
 }
 footer .cop a {
@@ -168,57 +148,47 @@ footer .cop a {
     outline: none;
 }
 
-
-@media(max-width: 1100px){
-    #page-home .projects .grid-item,
-    #page-home .projects .grid-item2{
+@media (max-width: 1100px) {
+    .projects .grid-item,
+    .projects .grid-item2 {
         max-height: 370px;
         min-height: 300px;
     }
 }
-@media(max-width: 850px){
-    #page-home .projects .grid-item,
-    #page-home .projects .grid-item2{
+@media (max-width: 850px) {
+    .projects .grid-item,
+    .projects .grid-item2 {
         margin-top: 5vh;
     }
-    #page-home .projects .grid-item,
-    #page-home .projects .grid-item2{
+    .projects .grid-item,
+    .projects .grid-item2 {
         display: flex;
         flex-direction: column;
     }
 }
-@media(max-width: 290px){
-    #page-home .projects .grid-item,
-    #page-home .projects .grid-item2{
+@media (max-width: 290px) {
+    .projects .grid-item,
+    .projects .grid-item2 {
         max-height: 480px;
     }
-    #page-home #content .consideration{
+    #content .consideration {
         min-height: 100vh;
-    }   
+    }
 }
 
-@keyframes background{
-    from{
+@keyframes background {
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
-@keyframes headerImage{
-    from{
+@keyframes headerImage {
+    from {
         transform: translateY(-30%);
     }
-    to{
+    to {
         transform: translateY(0%);
     }
-}
-@keyframes type {
-    0%{
-        width: 0ch;
-    }
-    100%{
-        width: 20.5ch;
-    }
-
 }

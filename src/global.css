@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h2,
+h3 {
+    font-size: 1.1em;
+}
+h4 {
+    font-size: 0.6em;
+}
+#root {
+    background-color: #fbfbff;
+    font-family: 'Dosis', sans-serif;
+    animation-name: background;
+    animation-duration: 400ms;
+    animation-timing-function: ease;
+}
