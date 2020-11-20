@@ -12,7 +12,7 @@ h4 {
     font-size: max(15px, 1vw);
 }
 #root {
-    width: 100vw;
+    width: 100%;
     background-color: #fbfbff;
     font-family: 'Dosis', sans-serif;
     animation-name: background;
