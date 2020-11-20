@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './assets/logo.png';
 import Ecoleta from './assets/ecoleta.png';
+import EcoletaGif from './assets/ecoleta-gif.gif';
 import Backing from './assets/backingclass.png';
+import BackingGif from './assets/backing-gif.gif';
 import Foodgram from './assets/foodgram.png';
+import FoodgramGif from './assets/foodgram-gif.gif';
 import Proffy from './assets/proffy.png';
 import UFirewall from './assets/ufirewall.png';
 
@@ -41,7 +44,7 @@ const Content = () => {
                             demanda de itens que precisam de reciclagem, de forma rápida, prática e segura.
                         </h3>
                         <div className="grid-img">
-                            <img src={Ecoleta} alt="" />
+                            <img src={EcoletaGif} alt="" />
                         </div>
                     </div>
                     <div className="grid-item2">
@@ -51,7 +54,7 @@ const Content = () => {
                             conteúdos educacionais específicos para determinadas áreas do conhecimento.
                         </h3>
                         <div className="grid-img">
-                            <img src={Backing} alt="" />
+                            <img src={BackingGif} alt="" />
                         </div>
                     </div>
                     <div className="grid-item">
@@ -62,7 +65,7 @@ const Content = () => {
                             alimentos e pratos.
                         </h3>
                         <div className="grid-img">
-                            <img src={Foodgram} alt="" />
+                            <img src={FoodgramGif} alt="" />
                         </div>
                     </div>
                     <div className="grid-item2">
