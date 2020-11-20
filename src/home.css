@@ -175,6 +175,11 @@ footer .cop a {
         min-height: 100vh;
     }
 }
+@media (max-width: 490px){
+    h4{
+        font-size: 1.2em;
+    }
+}
 
 @keyframes background {
     from {
