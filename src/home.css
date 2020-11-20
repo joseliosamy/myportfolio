@@ -166,18 +166,35 @@ footer .cop a {
         flex-direction: column;
     }
 }
+@media (max-width: 490px){
+    h4{
+        font-size: 1.2em;
+    }
+    #content #intro h1{
+        white-space: initial;
+        animation: headerImage 1s ease-out;
+        text-align: center;
+    }
+    #content .consideration{
+        min-height: 80vh
+    }
+}   
 @media (max-width: 290px) {
     .projects .grid-item,
     .projects .grid-item2 {
         max-height: 480px;
     }
-    #content .consideration {
+    #content .consideration{
         min-height: 100vh;
     }
 }
-@media (max-width: 490px){
-    h4{
-        font-size: 1.2em;
+@media (max-width: 230px){
+    #content .consideration{
+        min-height: 125vh;
+    }
+    .projects .grid-item,
+    .projects .grid-item2 {
+        max-height: 580px;
     }
 }
 
