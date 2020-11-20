@@ -4,8 +4,8 @@ font-family: 'Questrial', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
 
-.show-on-scroll{
-    display: none;
+.is-visible{
+    background-color: aqua;
 }
 #content #intro {
     display: flex;
