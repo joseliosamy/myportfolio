@@ -1,13 +1,16 @@
 import React from 'react';
-import logo from './assets/logo.png';
-import Ecoleta from './assets/ecoleta.png';
-import EcoletaGif from './assets/ecoleta-gif.gif';
-import Backing from './assets/backingclass.png';
-import BackingGif from './assets/backing-gif.gif';
-import Foodgram from './assets/foodgram.png';
-import FoodgramGif from './assets/foodgram-gif.gif';
-import Proffy from './assets/proffy.png';
-import UFirewall from './assets/ufirewall.png';
+
+import logo from '../assets/logo.svg';
+import Ecoleta from '../assets/ecoleta.png';
+import EcoletaGif from '../assets/ecoleta-gif.gif';
+import Backing from '../assets/backingclass.png';
+import BackingGif from '../assets/backing-gif.gif';
+import Foodgram from '../assets/foodgram.png';
+import FoodgramGif from '../assets/foodgram-gif.gif';
+import Proffy from '../assets/proffy.png';
+import UFirewall from '../assets/ufirewall.png';
+
+import ScrollScript from './scroll'
 
 const Content = () => {
     return (
@@ -47,7 +50,7 @@ const Content = () => {
                             <img src={EcoletaGif} alt="" />
                         </div>
                     </div>
-                    <div className="grid-item2">
+                    <div className="grid-item2 show-on-scroll">
                         <h2>Backing Class</h2>
                         <h3>
                             O <strong>Backing Class</strong> é uma espécie de rede social, ela é capaz de aramazenar
@@ -57,7 +60,7 @@ const Content = () => {
                             <img src={BackingGif} alt="" />
                         </div>
                     </div>
-                    <div className="grid-item">
+                    <div className="grid-item show-on-scroll">
                         <h2>Foodgram</h2>
                         <h3>
                             O <strong>Foodgram</strong> é uma plataforma web que tenta simular o instagram em seus
@@ -68,7 +71,7 @@ const Content = () => {
                             <img src={FoodgramGif} alt="" />
                         </div>
                     </div>
-                    <div className="grid-item2">
+                    <div className="grid-item2 show-on-scroll">
                         <h2>Proffy</h2>
                         <h3>
                             O <strong>Proffy</strong> é um site que age como intermeio entre professor/aluno e
@@ -79,7 +82,7 @@ const Content = () => {
                             <img src={Proffy} alt="" />
                         </div>
                     </div>
-                    <div className="grid-item">
+                    <div className="grid-item show-on-scroll">
                         <h2>UFirewall</h2>
                         <h3>
                             O <strong>UFirewall</strong> é uma espécie de rede social, ela é capaz de aramazenar

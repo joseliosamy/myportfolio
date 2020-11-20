@@ -4,23 +4,23 @@ font-family: 'Questrial', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
 
-#content {
-    font-weight: 600;
-    color: #727080;
+.show-on-scroll{
+    display: none;
 }
 #content #intro {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: url(./assets/background-svg.svg);
+    background: url(../../assets/background-svg.svg);
 }
 #content #intro img {
+    display: inline;
     height: 8vh;
     /* width: 4vw; */
-    margin: 0 auto;
+    animation: headerImage 1.5s ;
 }
 #content #intro h1 {
-    animation: typing 1.5s steps(27), blink-caret 0.5s step-end infinite;
+    animation: typing 1.5s steps(27), blink-caret 0.5s infinite;
     overflow: hidden;
     border-right: 3px solid #727080;
     white-space: nowrap;
@@ -137,7 +137,7 @@ footer .cop {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(./assets/background-svg.svg);
+    background-image: url(../../assets/background-svg.svg);
     color: #34333a;
     font-size: 0.7rem;
     font-family: 'Titillium Web', sans-serif;

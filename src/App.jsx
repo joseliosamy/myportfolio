@@ -1,9 +1,8 @@
-import './aos.css';
-import './global.css';
-import './home.css';
+import './components/styles/global.css';
+import './components/styles/home.css';
 
-import Content from './Content';
-import Footer from './Footer';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
