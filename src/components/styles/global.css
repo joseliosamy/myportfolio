@@ -4,16 +4,44 @@
     outline: 0;
     box-sizing: border-box;
 }
+h1::selection
+{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
+h2::selection{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
+
+h3::selection{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
+h4::selection{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
+
+a::selection{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
+p::selection{
+    background-color: rgb(127, 236, 255);
+    color: #fff;
+}
 h2,
 h3 {
     font-size: 1.1em;
 }
 h4 {
-    font-size: max(15px, 1vw);
+    font-size: max(12px, 1vw);
 }
 #root {
     width: 100%;
     background-color: #fbfbff;
+    color: #727080;
     font-family: 'Dosis', sans-serif;
     animation-name: background;
     animation-duration: 400ms;

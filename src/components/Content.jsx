@@ -10,13 +10,15 @@ import FoodgramGif from '../assets/foodgram-gif.gif';
 import Proffy from '../assets/proffy.png';
 import UFirewall from '../assets/ufirewall.png';
 
+import Yo from '../assets/yo.jpg'
 
 const Content = () => {
     return (
         <>
             <section id="intro">
-                <img src={logo} alt="Logotipo" />
-
+                <div className="logo">
+                    <img src={logo} alt="Logotipo" />
+                </div>
                 <h1>Hi, my name is Josélio Samy</h1>
             </section>
 
@@ -24,17 +26,20 @@ const Content = () => {
                 <div className="apresentation">
                     <div className="consideration">
                         <h1>Quem sou eu?</h1>
-                        <h3>
-                            Como já se deu por visto, meu nome é Josélio Samy, e eu tenho 20 anos. Sou um desenvolvedor
-                            front-end junior que iniciou o aprendizado no mundo do desenvolvimento aos 19 anos de idade
-                            e, hoje já conto com projetos front-end <a href="#">concluídos com êxito</a>, que estarão
-                            disponíveis abaixo para visualização.
-                        </h3>
-                        <h3>
-                            Após o término do ensino médio técnico, eu buscava novas coisas para aprender, coisas
-                            realmente impolgantes, e como diz aquele velho ditado, "quem procura acha", e foi isso que
-                            aconteceu, eu descobri esse universo do desenvolvimento web.
-                        </h3>
+                        <div className="consideration-box">
+                            <h3>
+                                Como já se deu por visto, meu nome é Josélio Samy, e eu tenho 20 anos. Sou um desenvolvedor
+                                front-end junior que iniciou o aprendizado no mundo do desenvolvimento aos 19 anos de idade
+                                e, hoje já conto com projetos front-end <a href="#">concluídos com êxito</a>, que estarão
+                                disponíveis abaixo para visualização.
+                            <br/>
+                            <br/>
+                                Após o término do ensino médio técnico, eu buscava novas coisas para aprender, coisas
+                                realmente impolgantes, e como diz aquele velho ditado, "quem procura acha", e foi isso que
+                                aconteceu, eu descobri esse universo do desenvolvimento web.
+                            </h3>
+                            <img src={Yo} alt="Eu"/>
+                        </div>
                     </div>
                 </div>
                 <div className="projects">
