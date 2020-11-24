@@ -9,6 +9,9 @@ import Foodgram from '../assets/foodgram.png';
 import FoodgramGif from '../assets/foodgram-gif.gif';
 import Proffy from '../assets/proffy.png';
 import UFirewall from '../assets/ufirewall.png';
+import Huddle from '../assets/huddle.png'
+
+import sideHover from './sidebar'
 
 import Yo from '../assets/yo.jpg'
 
@@ -17,7 +20,7 @@ const Content = () => {
         <>
             <section id="intro">
                 <div className="logo">
-                    <img src={logo} alt="Logotipo" />
+                    <img src={logo} alt="Logotipo" className="btn-hover" onClick="sideHover()"/>
                 </div>
                 <h1>Hi, my name is Josélio Samy</h1>
             </section>
@@ -94,6 +97,15 @@ const Content = () => {
                         </h3>
                         <div className="grid-img">
                             <img src={UFirewall} alt="" />
+                        </div>
+                    </div>
+                    <div className="grid-item2">
+                        <h2>Huddle</h2>
+                        <h3>
+                            O <strong>Huddle</strong> é uma rede social que cativa seus usuáríos a fazerem novas conexões, mas tambeém preza por interações genuínas em cada conexão.
+                        </h3>
+                        <div className="grid-img">
+                            <img src={Huddle} alt="" />
                         </div>
                     </div>
                 </div>

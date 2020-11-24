@@ -18,7 +18,7 @@ font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(180deg, rgba(39, 131, 218, 0.829) 0%,rgba(74, 192, 212, 0.739) 100%);
-}   
+}  
 #content #intro {
     display: flex;
     flex-direction: column;
@@ -34,11 +34,11 @@ font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 #content #intro img {
     display: inline;
     height: max(50px, 5vw);
-    /* width: 4vw; */
     animation: headerImage 1.5s ;
     position: fixed;
     bottom: 0;
@@ -179,8 +179,8 @@ footer .cop a {
     text-decoration: none;
     outline: none;
 }
-
 @media (max-width: 1100px) {
+
     .projects .grid-item,
     .projects .grid-item2 {
         max-height: 390px;
