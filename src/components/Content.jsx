@@ -3,7 +3,8 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import Ecoleta from '../assets/ecoleta.png';
 import EcoletaGif from '../assets/ecoleta-gif.gif';
-import Backing from '../assets/backingclass.png';
+import Backing from '../assets/backingclass.png';  
+import Backingv2 from '../assets/backingclassv2.png';
 import BackingGif from '../assets/backing-gif.gif';
 import Foodgram from '../assets/foodgram.png';
 import FoodgramGif from '../assets/foodgram-gif.gif';
@@ -64,7 +65,7 @@ const Content = () => {
                             conteúdos educacionais específicos para determinadas áreas do conhecimento.
                         </h3>
                         <div className="grid-img">
-                            <img src={BackingGif} alt="" />
+                            <img src={Backingv2} alt="" />
                         </div>
                     </div>
                     <div className="grid-item">
