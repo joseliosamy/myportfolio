@@ -35,9 +35,11 @@ main{
     text-align: center;
     line-height: 42px;
     font-size: 40px;
+    animation: text 1s ease-in;
 }
 .descrip p{
     color: #474747;
+    animation: text-p 1s ease-in;
 }
 .my{
     height: 100%;
@@ -45,10 +47,46 @@ main{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    position: relative;
 }
 .my img{
     max-width: 520px;
     max-height: 520px;
+    animation: image 1s ease-in;
+    position: absolute;
 }
 
+
+@keyframes text{
+    from{
+        transform:translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes text-p{
+    from{
+        transform:translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes image{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 

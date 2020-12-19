@@ -11,24 +11,22 @@
         <title>Josélio Samy | Front end developer</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav>
-                <h2>LOGO</h2>
+                <a href="/" onclick="a_out()"><h2>LOGO</h2></a>
 
                 <div class="nav">
                     <ul class="ul">
-                        <a href="sobre.html"><li>Sobre</li></a>
-                        <a href="#"><li>Portifólio</li></a>
-                        <a href="#"><li>Contato</li></a>
+                        <a href="sobre.html" onclick="a_out()"><li>Sobre</li></a>
+                        <a href="/" onclick="a_out()"><li>Portifólio</li></a>
+                        <a href="/" onclick="a_out()"><li>Contato</li></a>
                     </ul>
                     <div class="socials">
-                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        
-                       
+                        <a href="#"><i class="fa fa-github ic-anima-1" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook ic-anima-2" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram ic-anima-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin ic-anima-4" aria-hidden="true"></i></a>
+                        <button id="a-out">dd</button>
                     </div>
                 </div>
             </nav>
@@ -51,5 +49,6 @@
         </main>
 
         <script src="https://use.fontawesome.com/63488e7ce8.js"></script>
+        <script src="scripts/animation-header.js"></script>
     </body>
 </html>
