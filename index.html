@@ -7,12 +7,20 @@
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
 
         <title>Josélio Samy | Front end developer</title>
     </head>
     <body>
-        <header id="header">
+        <header id="header-hamburguer">
+            <span id="hamburguer" onclick="reveal()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <a href="/" onclick="a_out()"><h2 class="logo">LOGO</h2></a>
+        </header>
+
+        <header id="header" class="header-hamburguer-off">
             <nav>
+                <span onclick="reveal()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+
                 <a href="/" onclick="a_out()"><h2>LOGO</h2></a>
 
                 <div class="nav">
@@ -26,7 +34,6 @@
                         <a href="#"><i class="fa fa-facebook ic-anima-2" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-instagram ic-anima-3" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-linkedin ic-anima-4" aria-hidden="true"></i></a>
-                        <button id="a-out">dd</button>
                     </div>
                 </div>
             </nav>
@@ -50,5 +57,6 @@
 
         <script src="https://use.fontawesome.com/63488e7ce8.js"></script>
         <script src="scripts/animation-header.js"></script>
+        <script src="scripts/reveal-header.js"></script>
     </body>
 </html>

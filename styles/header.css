@@ -6,10 +6,13 @@ header{
     animation-name: header-in;
     animation-duration: 800ms;
 }
+#header-hamburguer{
+    display: none;
+}
 .header{
     animation: header-out 34s ease-out;
 }
-nav{
+nav{    
     width: 80%;
     height: 100%;
     max-width: 1400px;
@@ -18,12 +21,16 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+nav h2 .fa{
+    display: none;
+}
 header h2{
     color: white;
 
 }
 header a{
     text-decoration: none;
+    width: 100%;
 }
 .ul{
     list-style: none;
@@ -41,6 +48,7 @@ header a{
     flex-direction: row;
 }
 .socials{
+    display: flex;
     margin-left: 30px;
 }
 .socials .fa{

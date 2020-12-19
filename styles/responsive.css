@@ -1,0 +1,148 @@
+@media(max-width:1100px){
+    .content{
+        width: 100%;
+    }
+    .descrip{
+        padding: 22% 10% 0% 10%;
+    }
+    .my img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width:965px){
+    .my img{
+        width: 400px;
+        height: 400px;
+    }
+    .my{
+        justify-content: center;
+    }
+    .descrip{
+        padding: 17% 5% 0% 5%;
+    }
+}
+@media(max-width:790px){
+    /*HEADER*/
+    .ul a{
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .socials{
+        margin-left: 10px;
+    }
+    .socials .fa{
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    /*MAIN*/
+    .calc{
+        flex-direction: column;
+    }
+
+    .my{
+        justify-content: center;
+        align-items: center;
+    }
+    .descrip{
+        padding: 10% 5% 0% 5%;
+    }
+    .descrip h1{
+        font-size: 30px;
+    }
+    .descrip p{
+        font-size: 14px;
+    }
+}
+@media(max-width:600px){
+    .descrip{
+        padding: 10% 5% 0% 5%;
+    }
+    .my img{
+        width: 320px;
+        height: 320px;
+    }
+}
+@media(max-width:550px){
+    #header-hamburguer{
+        display: flex;
+        align-items: center;
+    }
+    #header{
+        height: 100vh;
+        position: relative;
+    }
+    .header-hamburguer-off{
+        display: none;
+    }
+    .header-hamburguer-on{
+        display: flex;
+    }
+    #header-hamburguer span .fa,
+    nav span.fa{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 3.2%;
+        left: 3%;
+        font-size: max(40px, 5vw);
+        color: white;
+    }
+    header a .logo{
+        display: block;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header a{
+        margin: 0 auto;
+        text-align: center;
+    }
+    header a h2{
+        display: none;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ul{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    .socials{
+        margin-top: 30px;
+    }
+    .socials .fa{
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+/*HEIGTH*/
+@media(max-height:670px){
+    .descrip{
+        padding: 12% 10% 0% 10%;
+    }
+}
+@media(max-height:590px){
+    .descrip{
+        padding: 10% 10% 0% 10%;
+    }
+    .my img{
+        width: 350px;
+        height: 350px;
+    }
+}
