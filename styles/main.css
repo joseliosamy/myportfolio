@@ -1,0 +1,54 @@
+main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+.initial{
+    width: 100%;
+}
+.calc{
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;
+}
+.descrip{
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+}
+.descrip h1{
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 40px;
+}
+.descrip p{
+    color: #474747;
+}
+.my{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.my img{
+    max-width: 520px;
+    max-height: 520px;
+}
+
+
