@@ -100,6 +100,7 @@
     header a{
         margin: 0 auto;
         text-align: center;
+        width: auto;
     }
     header a h2{
         display: none;
@@ -126,7 +127,12 @@
         font-size: 26px;
     }
 }
-
+@media(max-width:530px){
+    .my img{
+        width: 250px;
+        height: 250px;
+    }
+}
 
 
 
