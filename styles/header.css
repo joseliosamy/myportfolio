@@ -25,6 +25,7 @@ header a .fa-code-fork{
     transform: rotate(45deg);
 }
 header a .fa-bars{
+    margin-right: 5px;
     color: white;
     font-size: 2rem;
 }
@@ -32,6 +33,7 @@ header a .fa-bars:active{
     animation: icon-fa-active 400ms;
 }
 header a .fa-times{
+    margin-right: 5px;
     color: white;
     font-size: 2rem;
 }
@@ -74,7 +76,7 @@ ul a:hover,
 .mobile .nav{
     position: absolute;
     top: 90px;
-    right: 0;
+    right: 5px;
     height: 270px;
     width: 200px;
     background-color: #0e2031da;
