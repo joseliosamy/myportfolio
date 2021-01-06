@@ -24,6 +24,7 @@ body{
     width: 100%;
     color: var(--dark-blue);
     background-color: var(--white-smoke);
+    scroll-behavior: smooth;
 }
 #container{
     width: 100%;

@@ -12,6 +12,7 @@ main{
 }
 #landing .max{
     height: calc(100vh - 90px);
+    max-height: 743px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -46,6 +47,7 @@ main{
     margin-bottom: 15px;
     line-height: 42px;
     font-size: 40px;
+    text-align: center;
 }
 .descrip p{
     color: #576369;

@@ -14,6 +14,7 @@
     }
     #landing .max{
         height: auto;
+        max-height: 100%;
         flex-direction: column-reverse;
     }
     #landing{
@@ -35,5 +36,13 @@
         max-width: 300px;
         max-height: 300px;
     }
-
+}
+@media(max-width:350px){
+    .my-img img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .btn{
+        width: 150px;
+    }
 }
