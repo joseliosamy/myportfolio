@@ -6,3 +6,11 @@
         transform: scale(.5, .5);
     }
 }
+@keyframes botborder{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
