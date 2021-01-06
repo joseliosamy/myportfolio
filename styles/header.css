@@ -28,6 +28,16 @@ header a .fa-bars{
     color: white;
     font-size: 2rem;
 }
+header a .fa-bars:active{
+    animation: icon-fa-active 400ms;
+}
+header a .fa-times{
+    color: white;
+    font-size: 2rem;
+}
+header a .fa-times:active{
+    animation: icon-fa-active 400ms;
+}
 .ul{
     list-style: none;
     display: flex;

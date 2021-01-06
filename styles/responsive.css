@@ -10,10 +10,7 @@
     }
     header .mobile{
         height: 100%;
-        display: block;
-    }
-    .dropOff{
-        display: none;
+        display: inline;
     }
     #landing .max{
         height: auto;
