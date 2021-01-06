@@ -2,21 +2,15 @@ main{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    max-width: 1400px;
-    max-height: 900px;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.content{
-    width: 80%;
-    margin: 0 auto;
-}
-.initial{
+#landing{
     width: 100%;
 }
-.calc{
+#landing .max{
     height: calc(100vh - 90px);
     display: flex;
     align-items: center;
@@ -25,71 +19,57 @@ main{
 }
 .descrip{
     width: 100%;
-    height: 100%;
-    padding: 0 10%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: initial;
+    padding: 20px;
+    color: #0e2031;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    transition: 300ms;
+}
+.descrip:hover{
+    background-color: #0e203111;
+    box-shadow: 0 1px 2px #808080;
+}
+.descrip::before{
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: var(--dark-blue);
+    position: absolute;
+    left: 0;
 }
 .descrip h1{
     margin-bottom: 15px;
-    text-align: center;
     line-height: 42px;
     font-size: 40px;
-    animation: text 1s ease-in;
 }
 .descrip p{
-    color: #474747;
-    animation: text-p 1s ease-in;
+    color: #576369;
+    margin-bottom: 20px;
 }
-.my{
+.descrip p a{
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+.descrip p a:hover{
+    text-decoration: underline;
+    color: #576369;
+}
+.my-img{
     height: 100%;
-    width: 100%;
-    max-height: 810px;
+    width: 70%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    position: relative;
 }
-.my img{
-    width: 500px;
-    height: 500px;
-    animation: image 1s ease-in;
-
+.my-img img{
+    max-width: 520px;
+    max-height: 520px;
 }
 
-
-@keyframes text{
-    from{
-        transform:translateY(-50px);
-        opacity: 0;
-    }
-    to{
-        transform:translateY(0);
-        opacity: 1;
-    }
-    
-}
-@keyframes text-p{
-    from{
-        transform:translateY(50px);
-        opacity: 0;
-    }
-    to{
-        transform:translateY(0);
-        opacity: 1;
-    }
-    
-}
-@keyframes image{
-    from{
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 

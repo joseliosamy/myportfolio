@@ -9,52 +9,67 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/responsive.css">
 
+
         <title>Josélio Samy | Front end developer</title>
     </head>
     <body>
-        <header id="header-hamburguer">
-            <span id="hamburguer" onclick="reveal()"><i class="fa fa-bars" aria-hidden="true"></i></span>
-            <a href="/" onclick="a_out()"><h2 class="logo">LOGO</h2></a>
-        </header>
+        <header>
+            <div class="max">
+                <div class="desktop">
+                    <nav>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+                        <div class="nav">
+                            <ul class="ul">
+                                <a href="sobre.html"><li>Sobre</li></a>
+                                <a href="#"><li>Portifólio</li></a>
+                                <a href="#"><li>Contato</li></a>
+                            </ul><!--UL-->
+                            <div class="socials">
+                                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>             
+                            </div><!--SOCIALS-->
+                        </div><!--class-NAV-->
+                    </nav><!--NAV-->
+                </div><!--DESKTOP-->
 
-        <header id="header" class="header-hamburguer-off">
-            <nav>
-                <span onclick="reveal()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <div class="mobile">
+                    <nav>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                        <div class="nav">
+                            <ul class="ul">
+                                <a href="sobre.html"><li>Sobre</li></a>
+                                <a href="#"><li>Portifólio</li></a>
+                                <a href="#"><li>Contato</li></a>
+                            </ul><!--UL-->
+                            <div class="socials">
+                                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>             
+                            </div><!--SOCIALS-->
+                        </div><!--class-NAV-->
+                    </nav><!--NAV-->
+                </div><!--MOBILE-->
+            </div><!--MAX-->
+        </header><!--HEADER-->
 
-                <a href="/" onclick="a_out()"><h2>LOGO</h2></a>
-
-                <div class="nav">
-                    <ul class="ul">
-                        <a href="sobre.html" onclick="a_out()"><li>Sobre</li></a>
-                        <a href="/" onclick="a_out()"><li>Portifólio</li></a>
-                        <a href="/" onclick="a_out()"><li>Contato</li></a>
-                    </ul>
-                    <div class="socials">
-                        <a href="#"><i class="fa fa-github ic-anima-1" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-facebook ic-anima-2" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram ic-anima-3" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin ic-anima-4" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <section class="initial">
-                <div class="content calc">
+        <main id="container">
+            <section id="landing">
+                <div class="max">
                     <div class="descrip">
-                        <h1>Desenvolvedor Front End <span><</span>/></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus urna at ante dignissim varius. Nunc dignissim lorem nec ultricies sollicitudin.</p>
-                    </div>
-                    <div class="my">
-                        <img src="images/yo.png" alt="">
-                    </div>
-                </div>  
-            </section>
-        </main>
-
+                        <h1>Josélio Samy <i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+                        <p>Cursando ciência da computação pela <a href="#">UFPB</a>, técnico em manutenção de computadores pela <a href="">ECITPOP</a> e também desenvolvedor front end autodidata que acredita no grande potencial das tecnologias de desenvolvimento web para o transformar da vida das pessoas.</p>
+                        <a class="btn" href="#">Conhecer</a>
+                    </div><!--DESCRIP-->
+                    <div class="my-img">
+                        <img src="images/yo.png" alt="Josélio Samy">
+                    </div><!--MY-IMG-->
+                </div><!--MAX-->
+            </section><!--LANDING-->
+        </main><!--MAIN-CONTAINER-->
         <script src="https://use.fontawesome.com/63488e7ce8.js"></script>
-        <script src="scripts/animation-header.js"></script>
-        <script src="scripts/reveal-header.js"></script>
     </body>
 </html>
