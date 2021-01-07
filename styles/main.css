@@ -74,4 +74,26 @@ main{
     max-height: 520px;
 }
 
+#services{
+    width: 100%;
+}
+#services .max h1{
+    text-align: center;
+}
+#services .max{
+    padding: 7%;
+}
+.types{
+    display: flex;
+    justify-content: center;
+}
+.type-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 2px #80808081;
+}
 
