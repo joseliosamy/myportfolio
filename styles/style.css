@@ -44,6 +44,7 @@ img{
     --normalFont: 0.9rem;
     --bigFont: 2rem;
     --h2Font: 1.25rem;
+    --subtitle: 1.7rem;
 }
 /*BOT*/
 .maxW{
@@ -80,6 +81,7 @@ img{
         background-color: #fff;
         z-index: 100;
         border-bottom: 1px solid rgba(122, 122, 122, 0.1);
+
     }
     nav.desktop{
         height: 85px;
@@ -144,11 +146,11 @@ img{
     }
     #inicio .title{
         width: 100%;
-        padding-top: 80px;
+        padding-top: 50px;
         font-size: var(--bigFont);
     }
-    #inicio .title h1 {
-        margin-bottom: 15px;
+    #inicio .title h1{
+        margin-bottom: 20px;
     }
     #inicio .title h1 span{
         color: var(--firstColor);
@@ -161,6 +163,22 @@ img{
     }
     #inicio .rc img{
         width: 120px;
+    }
+    #inicio .btn-contato{
+        margin-bottom: 50px;
+    }
+    #inicio .network-inicio a{
+        margin-right: 20px;
+    }
+    #inicio .network-inicio i{
+        font-size: var(--subtitle);
+        color: var(--secondColor);
+        transition: 200ms;
+
+    }
+    #inicio .network-inicio i:hover{
+        color: var(--firstColor);
+        transform: scale(1.2,1.2);
     }
     #sobre{
         height: 100vh;
