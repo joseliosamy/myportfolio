@@ -41,6 +41,57 @@
         max-width: 300px;
         max-height: 300px;
     }
+    .timeline .timeline-box{
+        margin-right: 50px;
+    }
+    .timeline .timeline-box.right{
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    .types{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:650px){
+    #about .apresentation .tragetory .timeline::before{
+        content: "";
+        width: 3px;
+        height: 100%;
+        background-color: var(--dark-blue);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+    }
+    .timeline .timeline-box{
+        margin-left: 50px;
+        width: 100%;
+    }
+    .timeline .timeline-box::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: -11.25%;
+        top: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--dark-blue);
+    }
+    .timeline .timeline-box.right::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -10.5px;
+        top: 50%;
+        z-index: -100;
+        transform: translateY(-50%)
+        rotate(45deg);
+        background-color: #f5f5f5;
+        border-top: 1px solid rgba(128, 128, 128, 0.466);
+        border-right: 1px solid rgba(128, 128, 128, 0.466);
+    }
 }
 @media(max-width:350px){
     .my-img img{
