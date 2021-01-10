@@ -1,58 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="styles/keyframes.css">
 
-    <title>Josélio Samy - Front End Developer</title>
-</head>
-<body>
-    <header class="header">
-        <nav class="desktop maxW">
-            <div class="logo">
-                <a href="#"><h2>Josélio</h2></a>
-            </div><!--LOGO-->
-            <ul>
-                <a href="#inicio"><li>Início</li></a>
-                <a href="#sobre"><li>Sobre</li></a>
-                <a href="#habilidades"><li>Habilidades</li></a>
-                <a href="#portifolio"><li>Portifólio</li></a>
-                <a href="#contato"><li>Contato</li></a>
-            </ul><!--UL-->   
-        </nav><!--DESKTOP-->
-    </header><!--HEADER-->
 
-    <main id="container">
-        <section id="inicio">
-            <div class="maxW">
-                <div class="apresentation">
-                    <div class="title">
-                        <h1>Olá,<br> Eu sou <span>Josélio</span><br>Desenvolvedor <br> Front end</h1>
-                        <div class="btn-contato">
-                            <a href="#contato" class="btn">Contato</a>
+        <title>Josélio Samy | Front end developer</title>
+    </head>
+    <body>
+        <header>
+            <div class="max">
+                <div class="desktop">
+                    <nav>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+                        <div class="nav">
+                            <ul class="ul">
+                                <a href="#"><li>Início</li></a>
+                                <a href="#about"><li>Sobre</li></a>
+                                <a href="#"><li>Portifólio</li></a>
+                                <a href="#"><li>Contato</li></a>
+                            </ul><!--UL-->
+                            <div class="socials">
+                                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>             
+                            </div><!--SOCIALS-->
+                        </div><!--class-NAV-->
+                    </nav><!--NAV-->
+                </div><!--DESKTOP-->
+
+                <div class="mobile">
+                    <nav>
+                        <a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-bars hamburguer" aria-hidden="true"></i></a>
+                        <div class="nav" style="display:none;">
+                            <ul class="ul">
+                                <a href="/"><li>Início</li></a>
+                                <a href="sobre.html"><li>Sobre</li></a>
+                                <a href="#"><li>Portifólio</li></a>
+                                <a href="#"><li>Contato</li></a>
+                            </ul><!--UL-->
+                            <div class="socials">
+                                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>             
+                            </div><!--SOCIALS-->
+                        </div><!--class-NAV-->
+                    </nav><!--NAV-->
+                </div><!--MOBILE-->
+            </div><!--MAX-->
+        </header><!--HEADER-->
+
+        <main id="container">
+            <section id="landing">
+                <div class="max">
+                    <div class="descrip">
+                        <h1>Josélio Samy <i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+                        <p>Cursando ciência da computação pela <a href="#">UFPB</a>, técnico em manutenção de computadores pela <a href="">ECITPOP</a> e também desenvolvedor front end autodidata que acredita no grande potencial das tecnologias de desenvolvimento web para o transformar da vida das pessoas.</p>
+                        <a class="btn" href="pages/sobre.html">Conhecer</a>
+                    </div><!--DESCRIP-->
+                    <div class="my-img">
+                        <img src="images/yo.png" alt="Josélio Samy">
+                    </div><!--MY-IMG-->
+                </div><!--MAX-->
+            </section><!--LANDING-->
+
+            <section id="about">
+                <div class="max">  
+                    <div class="apresentation">
+                        <div class="title">
+                            <h1>Sobre mim</h1>
                         </div>
-                        <div class="network-inicio">
-                            <a href="https://www.linkedin.com/in/joseliosamy/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                            <a href="https://www.instagram.com/_joseliot/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                            <a href="https://github.com/joseliosamy" target="_blank"><i class='bx bxl-github'></i></a>
-                        </div>
-                    </div>
-                    <div class="rc">
-                        <img src="images/man-leaning.svg" alt="Homem de braços cruzados">
-                    </div>
-                </div><!--APRESENTATION-->
-            </div><!--MAXW-->
-        </section><!--INICIO-->
-        <section id="sobre">
-            <h1>ola mundo</h1>
-        </section>
-    </main><!--MAIN-->
+                        <div class="tragetory">
+                            <div class="intro">
+                                <h3>Quem sou eu?</h3>
+                                <p>Antes de qualquer coisa, digo-lhe um olá. Eu me chamo Josélio Samy, mas pode me chamar apenas de Josélio. Se você está aqui é por que não me conhece, ou não, mas partindo do princípio que você não me conheça, farei um tour pelo meu eu, a fim de tentar lhe situar mais sobre mim.</p>
+                            </div><!--INTRO-->
+                            <div class="timeline">
+                                <div class="timeline-panel">
+                                    <div class="timeline-head">
+                                        <h4>Estudante de ciência da computação - UFPB</h4>
+                                    </div><!--TIMELINE-HEAD-->  
+                                    <div class="timeline-body">
+                                        <small>Março, 2020 - Atualmente</small>
+                                        <p>Aguardando o início das atividades letivas por parte da faculdade.</p>
+                                    </div><!--TIMELINE-BODY--> 
+                                </div><!--TIMELINE-PANEL-->       
+                                <div class="timeline-panel">
+                                    <div class="timeline-head">
+                                        <h4>Estudante de ciência da computação - UFPB</h4>
+                                    </div><!--TIMELINE-HEAD-->  
+                                    <div class="timeline-body">
+                                        <small>Março, 2020 - Atualmente</small>
+                                        <p>Aguardando o início das atividades letivas por parte da faculdade.</p>
+                                    </div><!--TIMELINE-BODY--> 
+                                </div><!--TIMELINE-PANEL-->      
+                            </div><!--TIMELINE-->       
+                        </div><!--TRAGETORY-->        
+                    </div><!--APRESENTATION-->       
+                </div><!--MAX-->
+            </section><!--ABOUT-->
 
-    <script src="scripts/home.js"></script> 
-</body><!--BODY-->
+            <section id="services">
+                <div class="max">
+                    <h1>Serviços</h1>
+                    <div class="types">
+                        <div class="type-box">
+                            <img src="images/websites.png" alt="Websites">
+                            <h4><span>01</span> Websites</h4>
+                            <p>Produção de websites responsivos e landing pages.</p>
+                        </div><!--TYPE-BOX-->
+                        <div class="type-box">
+                            <img src="images/landing-page.png" alt="Icon Landing-Page">
+                            <h4><span>02</span> Landing pages</h4>
+                            <p>Coverter seus visitantes em Leards, e leards em clientes.</p>
+                        </div><!--TYPE-BOX-->
+                        <div class="type-box">
+                            <img src="images/consultoria.png" alt="Consultoria">
+                            <h4><span>03</span> Consultoria SEO</h4>
+                            <p>Entrar nos padrões dos motores de buscas para uma maior visibilidade. </p>
+                        </div><!--TYPE-BOX-->
+                    </div><!--TYPES-->
+                </div><!--MAX-->
+            </section><!--SERVICES-->
+        </main><!--MAIN-CONTAINER-->
+
+        <footer>
+            <div class="max">
+                <div class="credits">
+                    <h3>Copyright 2021. Todos os direitos reservados. </h3>
+                </div>
+                <div class="logo">
+                    <a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://use.fontawesome.com/63488e7ce8.js"></script>
+        <script src="https://kit.fontawesome.com/05552c5881.js" crossorigin="anonymous"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/menu.js"></script>
+    </body>
 </html>
