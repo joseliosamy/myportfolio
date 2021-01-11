@@ -2,7 +2,11 @@ header{
     width: 100%;
     height: 90px;
     background-color: var(--dark-blue);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
 }
 header .max{
     height: 100%;
@@ -23,6 +27,9 @@ header a .fa-code-fork{
     color: white;
     font-size: 4rem;
     transform: rotate(45deg);
+}
+header a{
+    cursor: pointer;
 }
 header a .fa-bars{
     margin-right: 5px;
@@ -69,6 +76,8 @@ ul a:hover,
     color: #909090;
     transform: scale(1.1, 1.1);
 }
+/*MOBILE*/
+
 .mobile{
     width: 100%;
     height: 100%;
@@ -94,6 +103,9 @@ ul a:hover,
 }
 .mobile .nav ul a{
     margin: 10px 0;
+}
+.mobile .nav ul a li{
+    text-decoration: none;
 }
 .mobile .nav .socials{
     margin: 0;

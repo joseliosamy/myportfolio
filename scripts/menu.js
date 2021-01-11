@@ -1,7 +1,7 @@
 $(function(){
-    $('.fa-bars').click(function(){
+    $('.hamburguer').click(function(){
         var menu = $('.mobile .nav');
-        var icon = $('.mobile .hamburguer');
+        var icon = $('.mobile .icon');
         var body = $('body');
         if(menu.is(":hidden") == true){
             menu.slideDown();

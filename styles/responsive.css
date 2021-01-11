@@ -41,7 +41,7 @@
         max-width: 300px;
         max-height: 300px;
     }
-    #about .apresentation .tragetory .timeline::before{
+    #sobre .apresentation .tragetory .timeline::before{
         left: 0;
     }
     .timeline .timeline-box{
