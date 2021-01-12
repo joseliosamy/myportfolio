@@ -22,8 +22,8 @@ $(function(){
 $(function(){
     $('.ul a').click(function(){
         var header = $("header");
-        header.slideUp();
-        header.slideDown();
+        header.animate({top:'-100px',opacity:'0.2'});
+        header.animate({top:'0px',opacity:'1'});
     })
 })
 
