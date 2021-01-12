@@ -218,6 +218,7 @@ main{
 
 #servicos{
     width: 100%;
+    background-color: var(--white-smoke);
 }
 #servicos .max{
     padding: 7% 0;

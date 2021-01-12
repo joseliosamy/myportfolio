@@ -19,12 +19,14 @@
 }
 html{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
 }
 body{
     width: 100%;
     color: var(--dark-blue);
-    background-color: var(--white-smoke);
-    scroll-behavior: smooth;
+    background-color: #e2e2e2;
 }
 #container{
     width: 100%;
