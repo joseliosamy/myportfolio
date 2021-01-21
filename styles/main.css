@@ -89,9 +89,10 @@ main{
     display: flex;
     align-items: center;
     background-color: #eeeeee;
+    position: relative;
 }
 #sobre .max{
-    padding: 7% 0;
+    padding: 8% 0;
 }
 #sobre h1{
     text-align: center;
@@ -100,12 +101,13 @@ main{
 #sobre .apresentation .intro h3{
     text-align: center;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #sobre .apresentation .intro p{
     text-align: center;
+    margin-bottom: 20px;
 }
 #sobre .apresentation .tragetory{
     display: flex;
@@ -221,7 +223,7 @@ main{
     background-color: var(--white-smoke);
 }
 #servicos .max{
-    padding: 7% 0;
+    padding: 8% 0;
 }
 #servicos .max h1{
     font-size: 2.5rem;
