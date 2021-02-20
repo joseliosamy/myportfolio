@@ -133,6 +133,11 @@ main{
 #sobre .about-body .text h2{
     font-weight: 600;
 }
+#sobre .about-body .text .small{
+    font-size: .875rem;
+    font-weight: 400;
+    color: #3b4549;
+}
 #sobre .about-body .text p a{
     color: var(--dark-blue);
     text-decoration: none;

@@ -6,7 +6,6 @@ header{
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 header .max{
     height: 100%;
@@ -23,10 +22,9 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-header a .fa-code-fork{
+header a .fas{
     color: white;
-    font-size: 4rem;
-    transform: rotate(45deg);
+    font-size: 3rem;
 }
 header a{
     cursor: pointer;
