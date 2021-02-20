@@ -58,15 +58,7 @@ main{
     color: #576369;
     margin-bottom: 20px;
 }
-.descrip p a{
-    color: var(--dark-blue);
-    text-decoration: none;
-    font-weight: 500;
-}
-.descrip p a:hover{
-    text-decoration: underline;
-    color: #576369;
-}
+
 .my-img{
     height: 100%;
     width: 70%;
@@ -94,25 +86,76 @@ main{
 #sobre .max{
     padding: 8% 0;
 }
-#sobre .apresentation{
-    box-shadow: 0 3px 5px grey;
-    border-radius: 5px;
-    padding: 32px;
+#sobre .about-me{
+    width: 100%;
+}
+
+#sobre .about-header{
+    margin-bottom: 50px;
 }
 #sobre .about-header h1{
     font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+}
+#sobre .about-header h1::after{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: var(--dark-blue);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #sobre .about-body{
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-#sobre .about-body p{
-    margin-left: 20px;
-    margin-bottom: 5px;
+#sobre .about-body .rc{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#sobre .about-footer{
-    width: auto;
+#sobre .about-body .rc img{
+    width: 100%;
+    border-radius: 45%;
+    border: 1px solid var(--dark-blue);
+    border-bottom: 3px solid var(--dark-blue);
+}
+#sobre .about-body .text{
+    width: 50%;
+}
+#sobre .about-body .text h2{
+    font-weight: 600;
+}
+#sobre .about-body .text p a{
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+#sobre .about-body .text p a:hover{
+    text-decoration: underline;
+    color: #576369;
+}
+#sobre .about-body .text .socials{
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+}
+#sobre .about-body .text .socials a{
+    height: auto;
+}
+#sobre .about-body .text .socials a i{
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
 
-}
+
 /*FIM sobre*/
 /*PORTIFOLIO*/
 #portifolio{
@@ -125,9 +168,6 @@ main{
 #portifolio .projects h1{
     font-size: 2.5rem;
     text-align: center;
-}
-.projects .card-header h3{
-
 }
 
 /*FIM PORTIFOLIO*/
