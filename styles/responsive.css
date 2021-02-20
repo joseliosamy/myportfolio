@@ -48,33 +48,19 @@
         margin-top: 90px;
         padding: 0;
     }
-    #sobre .apresentation .tragetory .timeline::before{
-        left: 0;
+    #sobre .about-body{
+        flex-direction: column;
     }
-    .timeline .timeline-box{
-        width: 90%;
-        margin-left: 10%;
+    #sobre .about-body .text{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
     }
-    .timeline .timeline-box.right::after{
-        left: -11.25%;
+    #sobre .about-body .text .socials{
+        justify-content: center;
     }
-    .timeline .timeline-box::before{
-        left: -10.5px;
-        background-color: #f5f5f5;
-        border-left: 1px solid rgba(128, 128, 128, 0.466);
-        border-bottom: 1px solid rgba(128, 128, 128, 0.466);
-        border-top: 0;
-        border-right: 0;
-    }
-    .timeline .timeline-box::after{
-        left: -11.25%;
-    }
-    .timeline .timeline-box{
-        margin-right: 50px;
-    }
-    .timeline .timeline-box.right{
-        margin-right: 0;
-
+    #sobre .about-body .text .socials a:last-child i{
+        margin: 0;
     }
     #servicos .max{
         margin-bottom: 90px;
