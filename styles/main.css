@@ -167,8 +167,7 @@ main{
     height: 100%;
 }
 #portifolio .max{
-    margin-top: 90px;
-    margin-bottom: 90px;
+    padding: 8% 0;
 }
 #portifolio .projects h1{
     font-size: 2.5rem;
