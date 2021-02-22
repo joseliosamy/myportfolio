@@ -24,8 +24,10 @@ srTop.reveal('.about-me .about-body .text h2',{delay:200}); // about header
 srTop.reveal('.about-me .about-body .text .small',{delay:200}); // about header
 srTop.reveal('.about-me .about-body .text p',{delay:300}); // about header
 srTop.reveal('.about-me .about-body .text .socials',{delay:500}); // about header
+srTop.reveal('.projects h1'); // projects h1
+srTop.reveal('.projects .card', {delay:200}); // projects card
 
-srTop.reveal('.intro p',{delay:300}); // intro about
+
 srTop.reveal('#servicos h1',{delay:100}); // h1 servicos
 srTop.reveal('.type-box',{delay:300}); // type-box servicos
 

@@ -62,6 +62,9 @@
     #sobre .about-body .text .socials a:last-child i{
         margin: 0;
     }
+    #portifolio .card a::after{
+        display: none;
+    }
     #servicos .max{
         margin-bottom: 90px;
         margin-top: 90px;
