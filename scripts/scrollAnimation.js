@@ -15,7 +15,10 @@ const srTop = ScrollReveal({
     reset: true
 });
 
-srTop.reveal('.descrip'); // descrip landing
+srTop.reveal('.descrip h1'); // descrip h1 landing
+srTop.reveal('.descrip p'); // descrip landing
+srTop.reveal('.descrip a.btn'); // descrip landing
+srTop.reveal('.descrip h1'); // descrip landing
 srTop.reveal('.my-img img'); // my-img landing
 srTop.reveal('.title'); // title about
 srTop.reveal('.about-me .about-header'); // about header
